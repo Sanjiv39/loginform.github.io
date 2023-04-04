@@ -141,8 +141,8 @@ main p{
     }
 }
 @media screen and (max-width:448px) {
-    html{
-        font-size: 43%;
+   .container{ 
+    transform: translateY(-40%) translateX(-40%);
     }
     #circle1{
         top: 20%;
