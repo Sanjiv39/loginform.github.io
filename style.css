@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background: linear-gradient(to bottom right, rgb(79, 237, 237), rgb(204, 239, 239) );
+}
+.container{
+    width: 300px;
+    height: 350px;
+    padding: 10px 30px;
+    display: block;
+    position: relative;
+    left: 40%;
+    top: 40%;
+    transform: translateY(-20%) translateX(-20%);
+    background: linear-gradient(to top left, rgb(208, 253, 253), rgb(123, 240, 255));
+    z-index: 2;
+    opacity: 0.8;
+}
+.header{
+    margin: 10px 40px 20px;
+    text-align: center;
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    font-size: 20px;
+}
+main{
+    padding: 20px;
+}
+main label{
+    display: block;
+    width: 80%;
+    margin: 10px 20px;
+}
+main input{
+    display: block;
+    width: 80%;
+    margin: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(159, 159, 159);
+    border-radius: 5px;
+    background: white;
+    /* outline: red solid 1px; */
+}
+main button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient( to bottom, rgb(0, 174, 248), rgb(183, 228, 241));
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 10px 40px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+main button:hover{
+    color: white;
+    background: linear-gradient( to bottom, rgb(1, 73, 255), rgb(105, 146, 250));
+}
+main p{
+    position: relative;
+    top: -10px;
+}
+.outerbox{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+   
+}
+.movementbox{
+    position: absolute;
+    margin: 5%;
+    height: 80%;
+    width: 90%;
+    /* background-color: aliceblue; */
+}
+.movementbox .circle {
+    background: linear-gradient(to top left, rgb(208, 253, 253), rgb(123, 240, 255));
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#circle1{
+    animation: slide1 5s linear infinite alternate;
+    left: 0;
+}
+#circle2{
+    bottom: 0;
+    right: 0;
+    animation: slide2 5s 1s linear infinite alternate;
+}
+@keyframes slide1 {
+    from{
+        rotate: 0deg;
+        left: 0;
+    }
+    to {
+        rotate: 360deg;
+        left: calc(100% - 200px);
+    }
+}
+@keyframes slide2 {
+    from{
+        rotate: 0deg;
+        right: 0;
+    }
+    to {
+        rotate: 360deg;
+        right: calc(100% - 200px);
+    }
+}
