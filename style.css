@@ -128,12 +128,15 @@ main p{
 }
 
 @media screen and (max-width:585px) {
+    .container{
+        transform: translateY(-30%) translateX(-30%);
+    }
     #circle1{
-        top: 10%;
+        /* top: 10%; */
         animation: slide1 4s linear infinite alternate;
     }
     #circle2{
-        bottom: 10%;
+        /* bottom: 10%; */
         animation: slide2 4s 0.8s linear infinite alternate;
     }
 }
