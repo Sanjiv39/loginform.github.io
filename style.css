@@ -88,6 +88,7 @@ main p{
     margin: 5%;
     height: 80%;
     width: 90%;
+    /* animation: load 0.5s linear infinite; */
     /* background-color: aliceblue; */
 }
 .movementbox .circle {
@@ -124,6 +125,14 @@ main p{
     to {
         rotate: 360deg;
         right: calc(100% - 20rem);
+    }
+}
+@keyframes load {
+    from{
+        rotate:0deg;
+    }
+    to{
+        rotate:360deg;
     }
 }
 

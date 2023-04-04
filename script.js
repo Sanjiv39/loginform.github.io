@@ -35,6 +35,7 @@ submitbtn.onclick = () =>
 {
     document.getElementById("circle1").style = `animation: slide1 1s linear infinite alternate;`
     document.getElementById("circle2").style = `animation: slide1 1s linear infinite alternate;`
+    document.getElementById("movementbox").style = `animation: load 0.5s linear infinite;`
     setTimeout(() => {
         location.reload()
     }, 3000);
